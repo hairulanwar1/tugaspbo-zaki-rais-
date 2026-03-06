@@ -1,0 +1,20 @@
+class Restaurant:
+    def _init_(self, restaurant_name, cuisine_type):
+        self.restaurant_name = restaurant_name
+        self.cuisine_type = cuisine_type
+
+    def describe_restaurant(self):
+        print("Nama Restoran:", self.restaurant_name)
+        print("Jenis Masakan:", self.cuisine_type)
+        print()
+
+
+# Membuat 3 instance
+resto1 = Restaurant("Sushi Tokyo", "Masakan Jepang")
+resto2 = Restaurant("Pizza Italia", "Masakan Italia")
+resto3 = Restaurant("Padang Sederhana", "Masakan Padang")
+
+# Memanggil method untuk masing-masing
+resto1.describe_restaurant()
+resto2.describe_restaurant()
+resto3.describe_restaurant()
